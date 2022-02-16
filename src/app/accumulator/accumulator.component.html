@@ -1,0 +1,27 @@
+<h3 class="text-tertiary">Accumulator Function</h3>
+<div class="row">
+    <div class="col">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            Explain
+          </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <p>This simple exercise show how angular is perfect manipulate the dom and rendering in real time the content for an WebApp</p>
+                        <pre>
+                                <code [innerHTML]="exerciseCode1"></code>
+                            </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <span>The base is <strong>{{base}}</strong> </span>
+        <button (click)="accumulator(-base)">- {{ base }}</button>
+        <span>{{number}}</span>
+        <button (click)="accumulator(base)">+ {{base}}</button>
+    </div>
