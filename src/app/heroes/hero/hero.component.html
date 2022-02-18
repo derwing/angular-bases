@@ -1,0 +1,43 @@
+<h3 class="text-tertiary">One way data binding</h3>
+<div class="row mb-2">
+    <div class="col">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">Explain</button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <p>This exercise show one way data binding concept</p>
+                        <iframe width="560" height="315" [src]="getVideoIframe('https://www.youtube.com/watch?v=fP7iVhFNTOk&list=RDCMUCC78lt3WRH0bROwiIvw847g&start_radio=1&rv=fP7iVhFNTOk&t=27')" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <h1>{{ name }}</h1>
+        <table class="table table-primary table-striped">
+            <thead>
+                <tr>
+                    <th>Name </th>
+                    <th>Age </th>
+                    <th>Function </th>
+                    <th>Capitalize name by <a href="https://www.typescripttutorial.net/typescript-tutorial/typescript-getters-setters/">Getter</a> </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> {{ name }}</td>
+                    <td> {{ age }}</td>
+                    <td> {{ getName() }}</td>
+                    <td> {{ capitalizeName }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<span>Change </span>
+<button (click)="changeName()">Change Hero</button>
+<button (click)="changeAge()">Change Age</button>
