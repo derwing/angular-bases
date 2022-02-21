@@ -19,7 +19,7 @@
     </div>
     <div class="col">
         <span>The base is <strong>{{base}}</strong> </span>
-        <button (click)="accumulator(-base)">- {{ base }}</button>
+        <button class="btn btn-danger m-2" (click)="accumulator(-base)">- {{ base }}</button>
         <span>{{number}}</span>
-        <button (click)="accumulator(base)">+ {{base}}</button>
+        <button class="btn btn-success m-2" (click)="accumulator(base)">+ {{base}}</button>
     </div>

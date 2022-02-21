@@ -1,0 +1,34 @@
+<h3 class="text-tertiary">*ngFor Directive</h3>
+<div class="row">
+    <div class="col">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">Explain</button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <p>This exercise show how you can use an <a href="https://angular.io/api/common/NgForOf">*ngFor directive </a> in html template for show the content in an array</p>
+                        <pre class="text-end"> <code>*ngFor="let item of list; let i = index" </code> </pre>
+                        <p>Thanks to one way data binding you can see the change in real times, and thanks to *ngIf directive you can hide controls if you don't need them</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="mb-2" *ngIf="heroes.length > 0">
+            <h6 class="text-danger">Delete Hero</h6>
+            <label for="indexHero">choose the number of the hero: </label>
+            <input class="ms-2" type="number" name="indexHero" id="indexHero" [(ngModel)]="indexHero">
+            <br>
+            <button class="btn btn-outline-danger" (click)="deleteHero(indexHero - 1)" [disabled]="indexHero < 1">Delete hero</button>
+            <br>
+            <p class="text-danger mt-1" *ngIf="deletedHero">Hero deleted {{ deletedHero}}</p>
+        </div>
+        <ul>
+            <li *ngFor="let hero of heroes; let i = index">{{i+1}}-{{hero}} - <span (click)="deleteHero(i)"><i class="fa fa-trash" aria-hidden="true"></i></span>
+            </li>
+        </ul>
+    </div>
+</div>
