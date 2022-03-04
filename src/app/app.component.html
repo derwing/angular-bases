@@ -1,25 +1,48 @@
 <h1 class="text-primary">Angular Bases</h1>
 <h6>This project show basic function of Angular Framework and TypeScrip</h6>
-<span>For know which technologies are used in this project please read <i class="fab fa-markdown"></i><a href="../assets/Technology.md"> this markdown file</a></span>
-<hr>
+<span>For know which technologies are used in this project please read
+  <i class="fab fa-markdown"></i><a href="../assets/Technology.md"> this markdown file</a></span>
+<br>
+<span>You can see the code of this project at: <a href="https://github.com/derwing/angular-bases"> <i class="fab fa-github text-dark"></i> Git Hub</a></span>
+<hr />
 
-<h2 class="text-secondary"><i class="fas fa-eye-slash" (click)="hideShowExercise(1, false)" *ngIf="exercise1"></i> <i class="fas fa-eye" (click)="hideShowExercise(1, true)" *ngIf="!exercise1"></i> Exercise 1</h2>
+<h2 class="text-secondary">
+    <i class="fas fa-eye-slash" (click)="hideShowExercise(1, false)" *ngIf="exercise1">
+  </i>
+    <i class="fas fa-eye" (click)="hideShowExercise(1, true)" *ngIf="!exercise1">
+  </i> Exercise 1
+</h2>
 <div *ngIf="exercise1">
-    <app-accumulator>
-    </app-accumulator>
+    <app-accumulator> </app-accumulator>
 </div>
-<hr>
-<h2 class="text-secondary"><i class="fas fa-eye-slash" (click)="hideShowExercise(2, false)" *ngIf="exercise2"></i> <i class="fas fa-eye" (click)="hideShowExercise(2, true)" *ngIf="!exercise2"></i> Exercise 2</h2>
+<hr />
+<h2 class="text-secondary">
+    <i class="fas fa-eye-slash" (click)="hideShowExercise(2, false)" *ngIf="exercise2"></i>
+    <i class="fas fa-eye" (click)="hideShowExercise(2, true)" *ngIf="!exercise2"></i> Exercise 2
+</h2>
 <div *ngIf="exercise2">
     <app-hero></app-hero>
 </div>
-<hr>
-<h2 class="text-secondary"><i class="fas fa-eye-slash" (click)="hideShowExercise(3, false)" *ngIf="exercise3"></i> <i class="fas fa-eye" (click)="hideShowExercise(3, true)" *ngIf="!exercise3"></i> Exercise 3</h2>
+<hr />
+<h2 class="text-secondary">
+    <i class="fas fa-eye-slash" (click)="hideShowExercise(3, false)" *ngIf="exercise3"></i>
+    <i class="fas fa-eye" (click)="hideShowExercise(3, true)" *ngIf="!exercise3"></i> Exercise 3
+</h2>
 <div *ngIf="exercise3">
     <app-list></app-list>
 </div>
-<hr class="mb-2">
+<hr />
+<h2 class="text-secondary">
+    <i class="fas fa-eye-slash" (click)="hideShowExercise(4, false)" *ngIf="exercise4"></i>
+    <i class="fas fa-eye" (click)="hideShowExercise(4, true)" *ngIf="!exercise4"></i> Exercise 4
+</h2>
+<div *ngIf="exercise4">
+    <app-main-page></app-main-page>
+</div>
+<hr class="mb-2" />
 <div class="bg-info">
     <h1 class="text-white">Gratitude <i class="fas fa-praying-hands"></i></h1>
-    <p class="text-light">This project is base in the course exercises of www.fernando-herrera.com</p>
+    <p class="text-light">
+        This project is base in the course exercises of www.fernando-herrera.com
+    </p>
 </div>

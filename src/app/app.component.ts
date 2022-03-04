@@ -7,9 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  exercise1: boolean = true;
-  exercise2: boolean = true;
-  exercise3: boolean = true;
+  exercise1: boolean = false;
+  exercise2: boolean = false;
+  exercise3: boolean = false;
+  exercise4: boolean = true;
 
   hideShowExercise(exerciseNumber: Number, showHide: boolean) {
     switch (exerciseNumber) {
@@ -24,7 +25,10 @@ export class AppComponent {
           case 3:
             this.exercise3 = showHide;
             break;
-    
+
+            case 4:
+              this.exercise4 = showHide;
+              break;    
       default:
         break;
     }

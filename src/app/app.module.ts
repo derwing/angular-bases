@@ -1,3 +1,5 @@
+import { SharedModule } from './shared/shared.module';
+import { DbzModule } from './dbz/dbz.module';
 import { AccumulatorModule } from './accumulators/accumulator.module';
 import { HeroesModule } from './heroes/heroes.module';
 import { NgModule } from '@angular/core';
@@ -11,8 +13,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    SharedModule,
     HeroesModule,
-    AccumulatorModule
+    AccumulatorModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]
