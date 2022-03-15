@@ -12,35 +12,39 @@ export class HeroComponent {
 
     constructor(
         private _sanitizer: DomSanitizer
-    ) {}
+    ) { }
 
     get capitalizeName(): string {
         return this.name.toUpperCase();
     }
 
     getName(): string {
-        return `${ this.name } - ${ this.age }`;
+        return `${this.name} - ${this.age}`;
     }
 
     changeName(): void {
-        this.name = 'Spiderman';
+        if (this.name === 'Spiderman') {
+            this.name = 'Ironman'
+        } else {
+            this.name = 'Spiderman'
+        }
     }
 
     changeAge(): void {
-        this.age = 30;
+        this.age = Math.floor(Math.random() * (100 - 1)) + 1;
     }
 
     // show youtube video in angular
     getVideoIframe(url: string) {
         var video, results;
-     
+
         if (url === null) {
             return '';
         }
         results = url.match('[\\?&]v=([^&#]*)');
-        video   = (results === null) ? url : results[1];
-     
-        return this._sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/' + video);   
+        video = (results === null) ? url : results[1];
+
+        return this._sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/' + video);
     }
-    
+
 }

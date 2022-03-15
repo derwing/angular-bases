@@ -10,7 +10,7 @@ import { Character } from '../interfaces/dbz.interfaces';
 export class MainPageComponent {
 
 
-  message: string = 'In this section explain the behavior of formsModule & NgModel(two way data binding) and the information is provided using an angular service';
+  message: string = 'In this section explain the behavior of formsModule & NgModel (two way data binding) and the information is provided using an angular service';
   new: Character = {
     name: 'Maestro Rochi',
     power: 12000
