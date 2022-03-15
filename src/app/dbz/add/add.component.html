@@ -1,0 +1,10 @@
+<h3>Add dbz character {{ new.name }} - {{ new.power | number}} </h3>
+<hr>
+<form (ngSubmit)="add()">
+    <!-- [value]="new.name" (input)="changeName( $event )" -> This is the same function of [(ngModel)]-->
+    <input class="block" type="text" placeholder="Name" name="name" [(ngModel)]="new.name" />
+    <br>
+    <input class="block my-2" type="number" placeholder="Power" name="power" [(ngModel)]="new.power" />
+    <br>
+    <button class="btn btn-primary block" type="submit">Add</button>
+</form>

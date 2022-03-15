@@ -4,18 +4,20 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MainPageComponent } from './main-page/main-page.component';
 import { CharacteresComponent } from './characteres/characteres.component';
+import { AddComponent } from './add/add.component';
 
 
 
 @NgModule({
   declarations: [
     MainPageComponent,
-    CharacteresComponent
+    CharacteresComponent,
+    AddComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
-    SharedModule
+    SharedModule,
   ],
   exports: [
     MainPageComponent,
