@@ -1,4 +1,4 @@
-<h1>Dragon Ball Z</h1>
+<h1>formsModule & NgModel</h1>
 <div class="mb-2">
     <app-explain-accordion [message]="message" [moreInfo]="'https://angular.io/api/forms/FormsModule'">
     </app-explain-accordion>
@@ -6,10 +6,10 @@
 
 <div class="row">
     <div class="col">
-        <app-characteres [characterData]="characteres"></app-characteres>
+        <app-characteres></app-characteres>
 
     </div>
     <div class="col">
-        <app-add (onNewCharacter)="addNewCharacter($event)" [newCharacter]="new"></app-add>
+        <app-add [newCharacter]="new"></app-add>
     </div>
 </div>
