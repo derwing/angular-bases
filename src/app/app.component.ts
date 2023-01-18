@@ -12,22 +12,22 @@ export class AppComponent {
   exercise3: boolean = false;
   exercise4: boolean = false;
 
-  hideShowExercise(exerciseNumber: Number, showHide: boolean) {
+  hideShowExercise(exerciseNumber: Number) {
     switch (exerciseNumber) {
       case 1:
-        this.exercise1 = showHide;
+        this.exercise1 = !this.exercise1;
         break;
 
       case 2:
-        this.exercise2 = showHide;
+        this.exercise2 = !this.exercise2;
         break;
 
       case 3:
-        this.exercise3 = showHide;
+        this.exercise3 = !this.exercise3;
         break;
 
       case 4:
-        this.exercise4 = showHide;
+        this.exercise4 = !this.exercise4;
         break;
       default:
         break;

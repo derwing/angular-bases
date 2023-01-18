@@ -6,39 +6,39 @@
     <br>
     <span>You can see the code of this project at: <a href="https://github.com/derwing/angular-bases">Git Hub</a> <i class="fab fa-github text-dark ms-1"></i></span>
     <br>
-    <span>This project use <a href="https://en.wikipedia.org/wiki/Continuous_deployment" target="_blank">continous deployment</a> thanks to <a href="https://www.netlify.com/" target="_blank">netlify.com</a>  <img src="https://cdn.worldvectorlogo.com/logos/netlify.svg" alt="" class="img ms-1" style="width: 25px;"> </span>
+    <span>This project use <a href="https://en.wikipedia.org/wiki/Continuous_deployment" target="_blank">continuous deployment</a> thanks to <a href="https://www.netlify.com/" target="_blank">netlify.com</a>  <img src="https://cdn.worldvectorlogo.com/logos/netlify.svg" alt="" class="img ms-1" style="width: 25px;"> </span>
     <hr />
 </header>
 
-<h2 class="text-secondary">
-    <i class="fas fa-eye-slash" (click)="hideShowExercise(1, false)" *ngIf="exercise1">
+<h2 class="text-secondary" (click)="hideShowExercise(1)">
+    <i class="fas fa-eye-slash" *ngIf="exercise1">
   </i>
-    <i class="fas fa-eye" (click)="hideShowExercise(1, true)" *ngIf="!exercise1">
+    <i class="fas fa-eye" *ngIf="!exercise1">
   </i> Exercise 1
 </h2>
 <div *ngIf="exercise1">
     <app-accumulator> </app-accumulator>
 </div>
 <hr />
-<h2 class="text-secondary">
-    <i class="fas fa-eye-slash" (click)="hideShowExercise(2, false)" *ngIf="exercise2"></i>
-    <i class="fas fa-eye" (click)="hideShowExercise(2, true)" *ngIf="!exercise2"></i> Exercise 2
+<h2 class="text-secondary" (click)="hideShowExercise(2)">
+    <i class="fas fa-eye-slash" *ngIf="exercise2"></i>
+    <i class="fas fa-eye" *ngIf="!exercise2"></i> Exercise 2
 </h2>
 <div *ngIf="exercise2">
     <app-hero></app-hero>
 </div>
 <hr />
-<h2 class="text-secondary">
-    <i class="fas fa-eye-slash" (click)="hideShowExercise(3, false)" *ngIf="exercise3"></i>
-    <i class="fas fa-eye" (click)="hideShowExercise(3, true)" *ngIf="!exercise3"></i> Exercise 3
+<h2 class="text-secondary" (click)="hideShowExercise(3)">
+    <i class="fas fa-eye-slash" *ngIf="exercise3"></i>
+    <i class="fas fa-eye" *ngIf="!exercise3"></i> Exercise 3
 </h2>
 <div *ngIf="exercise3">
     <app-list></app-list>
 </div>
 <hr />
-<h2 class="text-secondary">
-    <i class="fas fa-eye-slash" (click)="hideShowExercise(4, false)" *ngIf="exercise4"></i>
-    <i class="fas fa-eye" (click)="hideShowExercise(4, true)" *ngIf="!exercise4"></i> Exercise 4
+<h2 class="text-secondary" (click)="hideShowExercise(4)">
+    <i class="fas fa-eye-slash" *ngIf="exercise4"></i>
+    <i class="fas fa-eye" *ngIf="!exercise4"></i> Exercise 4
 </h2>
 <div *ngIf="exercise4">
     <app-main-page></app-main-page>
